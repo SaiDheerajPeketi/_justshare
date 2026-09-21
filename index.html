@@ -35,6 +35,7 @@
         <li><strong>Google Play</strong> processes installation, purchases, payments, refunds, licensing, and fraud controls. Purchase tokens are sent transiently to the Just Share backend for verification and are retained only as one-way hashes with the product, order status, and anonymous installation identifier.</li>
         <li><strong>RevenueCat</strong> runs in observer mode and may process an anonymous app-user identifier, product and entitlement status, purchase history, and limited app/device diagnostics. It does not receive file contents or connection codes.</li>
         <li><strong>Firebase Analytics and Crashlytics</strong> may process privacy-scoped app events, app-instance and device/app information, crash traces, and diagnostics. Events must not include file names, paths, content, peers, codes, tokens, IP addresses, or encryption material.</li>
+        <li><strong>Firebase App Check with Google Play Integrity</strong> processes app and device-integrity signals to issue short-lived attestation tokens. The Just Share API rejects mobile requests without a valid token for the registered Android app. File names, file contents, connection codes, and encryption material are not included in the attestation request.</li>
         <li><strong>Cloudflare</strong> provides the encrypted WebSocket relay and may process ordinary network and security metadata required to deliver and protect it.</li>
       </ul>
 
@@ -52,7 +53,7 @@
       <h2>Google Play Data Safety summary</h2>
       <ul>
         <li>User-selected files are handled for app functionality and are not stored by Black and Blue.</li>
-        <li>Anonymous identifiers, purchase history, app interactions, crash logs, diagnostics, quota, and aggregate transfer measurements are processed for functionality, billing, analytics, reliability, fraud prevention, and support.</li>
+        <li>Anonymous identifiers, app/device-integrity signals, purchase history, app interactions, crash logs, diagnostics, quota, and aggregate transfer measurements are processed for functionality, billing, analytics, reliability, fraud prevention, abuse prevention, and support.</li>
         <li>Data sent to service providers is encrypted in transit; Remote file payloads are additionally end-to-end encrypted.</li>
         <li>There are no ads, advertising-ID collection, public profiles, or sale of user data.</li>
       </ul>
