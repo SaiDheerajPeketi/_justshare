@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Just Share privacy, data deletion, terms, and support information.">
+  <title>Just Share · Privacy & Support</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="shell">
+    <div class="eyebrow">Black and Blue · Just Share</div>
+    <h1>Send files directly. Keep the contents private.</h1>
+    <p class="lede">The official privacy policy, data-deletion instructions, terms, and support page for the Just Share Android app.</p>
+    <p class="meta">Effective 21 September 2026 · Last updated 21 September 2026</p>
+    <nav aria-label="Page sections">
+      <a href="#privacy">Privacy</a><a href="#data">Data practices</a><a href="#deletion">Deletion</a><a href="#terms">Terms</a><a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <section id="privacy">
+      <h2>Privacy policy</h2>
+      <p>Just Share is published by Black and Blue. This policy applies to the Just Share Android app, its Remote relay service, and this website.</p>
+      <div class="callout"><strong>Transfer contents are not stored by Black and Blue.</strong> Local transfers go directly between devices. Remote transfers are end-to-end encrypted; relay infrastructure forwards encrypted frames and cannot read the files.</div>
+
+      <h3>Information processed on your device</h3>
+      <p>Just Share processes files you deliberately select, file names and sizes needed to present a transfer, nearby-device and connection information, QR or connection codes, transfer progress and history, preferences, and an anonymous installation identifier. Local transfer records remain in app-private storage unless you delete them.</p>
+
+      <h3>Remote service information</h3>
+      <p>When you use Remote transfer, the service processes an anonymous installation identifier, a random session identifier, the selected transfer size used to reserve quota, plan and quota balances, session timing, connection mode, and aggregate bytes. The relay can necessarily observe network routing information and encrypted traffic volume, but it is not designed to retain file contents, names, paths, MIME content, peer identities, QR codes, or encryption material.</p>
+
+      <h3>Purchases and diagnostics</h3>
+      <ul>
+        <li><strong>Google Play</strong> processes installation, purchases, payments, refunds, licensing, and fraud controls. Purchase tokens are sent transiently to the Just Share backend for verification and are retained only as one-way hashes with the product, order status, and anonymous installation identifier.</li>
+        <li><strong>RevenueCat</strong> runs in observer mode and may process an anonymous app-user identifier, product and entitlement status, purchase history, and limited app/device diagnostics. It does not receive file contents or connection codes.</li>
+        <li><strong>Firebase Analytics and Crashlytics</strong> may process privacy-scoped app events, app-instance and device/app information, crash traces, and diagnostics. Events must not include file names, paths, content, peers, codes, tokens, IP addresses, or encryption material.</li>
+        <li><strong>Cloudflare</strong> provides the encrypted WebSocket relay and may process ordinary network and security metadata required to deliver and protect it.</li>
+      </ul>
+
+      <h3>Permissions</h3>
+      <p>Depending on the transfer method and Android version, Just Share may request nearby-device, Bluetooth, Wi-Fi, location, camera, notification, media/file, and foreground-service access. Camera access is used for QR codes. Permissions are requested in context and can be changed in Android Settings, though the related feature may stop working.</p>
+
+      <h3>Sharing, sale, security, and retention</h3>
+      <p>We do not sell personal information or use third-party advertising. Data is disclosed only to the processors above, to provide support you request, or when legally required. Network traffic uses encrypted transport in addition to Remote transfer encryption. Quota, purchase, security, and aggregate operational records are kept only as long as needed for service operation, fraud prevention, accounting, support, and legal obligations.</p>
+
+      <h3>Children and teenagers</h3>
+      <p>Just Share is intended for people aged 13 and older and is not directed to children under 13. Users control the files they send; Black and Blue does not curate or moderate transferred content. A parent or guardian should supervise a minor's file sharing and purchases.</p>
+    </section>
+
+    <section id="data">
+      <h2>Google Play Data Safety summary</h2>
+      <ul>
+        <li>User-selected files are handled for app functionality and are not stored by Black and Blue.</li>
+        <li>Anonymous identifiers, purchase history, app interactions, crash logs, diagnostics, quota, and aggregate transfer measurements are processed for functionality, billing, analytics, reliability, fraud prevention, and support.</li>
+        <li>Data sent to service providers is encrypted in transit; Remote file payloads are additionally end-to-end encrypted.</li>
+        <li>There are no ads, advertising-ID collection, public profiles, or sale of user data.</li>
+      </ul>
+      <p>The final Play Console form must be checked against the exact signed release candidate and active dashboard configuration.</p>
+    </section>
+
+    <section id="deletion">
+      <h2>Data deletion</h2>
+      <ol>
+        <li>Delete transfer-history entries in Just Share where that control is available.</li>
+        <li>To remove all local app data, use Android Settings → Apps → Just Share → Storage → Clear storage, or uninstall the app.</li>
+        <li>Deleting Just Share does not delete files saved elsewhere on either device; remove those files in the relevant file manager.</li>
+      </ol>
+      <p>To request deletion of server, Firebase, or RevenueCat records we can administer, email <a href="mailto:developer@blackandblue.co.in?subject=Just%20Share%20privacy%20request">developer@blackandblue.co.in</a> with the subject <strong>Just Share privacy request</strong>. Include only the minimum locator requested by support, such as the anonymous installation identifier or Google Play order identifier. Never email files, purchase tokens, relay tokens, or connection codes.</p>
+      <p>Google Play and other providers may retain payment, tax, dispute, fraud, security, or legal records. Active relay sessions and short-lived credentials expire automatically; clearing local data does not reverse completed purchases.</p>
+    </section>
+
+    <section id="terms">
+      <h2>Terms of use</h2>
+      <p>You must be at least 13, be legally able to agree, and have the right to send and receive every file you transfer.</p>
+      <ul>
+        <li>Do not use Just Share to infringe rights, distribute unlawful or harmful material, evade access controls, attack devices or networks, or violate law.</li>
+        <li>Local transfer remains free. Any Remote allowance, one-time Pro unlock, data pack, localized price, tax, refund eligibility, and purchase terms are shown by Google Play before purchase.</li>
+        <li>Remote quota is reserved from the sender using the selected file size. If Android cannot determine the size, the maximum session amount may be reserved. Failed or interrupted sessions may still consume reserved quota.</li>
+        <li>Transfer speed and availability depend on devices, permissions, networks, system restrictions, and third-party infrastructure. No system can guarantee delivery or absolute security.</li>
+        <li>The app is provided subject to consumer rights that cannot legally be excluded. Back up important files and verify the recipient before sending.</li>
+      </ul>
+      <p>We may update the app or these terms for security, product, policy, or legal reasons. Material changes will be reflected by the date above.</p>
+    </section>
+
+    <section id="support">
+      <h2>Support and privacy contact</h2>
+      <p>Email <a href="mailto:developer@blackandblue.co.in?subject=Just%20Share%20support">developer@blackandblue.co.in</a>. Include the app version, Android version, device model, transfer method, and a concise description. Do not attach private files, screenshots containing connection codes, purchase tokens, or relay credentials.</p>
+    </section>
+  </main>
+  <footer class="shell">© 2026 Black and Blue · Just Share for Android</footer>
+</body>
+</html>
