@@ -32,7 +32,7 @@
 
       <h3>Purchases and diagnostics</h3>
       <ul>
-        <li><strong>Google Play</strong> processes installation, purchases, payments, refunds, licensing, and fraud controls. Purchase tokens are sent transiently to the Just Share backend for verification and are retained only as one-way hashes with the product, order status, and anonymous installation identifier.</li>
+        <li><strong>Google Play</strong> processes installation, purchases, optional one-time tips, payments, refunds, licensing, and fraud controls. Purchase tokens are sent transiently to the Just Share backend for verification and are retained only as one-way hashes with the product, order status, and anonymous installation identifier.</li>
         <li><strong>RevenueCat</strong> runs in observer mode and may process an anonymous app-user identifier, product and entitlement status, purchase history, and limited app/device diagnostics. It does not receive file contents or connection codes.</li>
         <li><strong>Firebase Analytics and Crashlytics</strong> may process privacy-scoped app events, app-instance and device/app information, masked-network-derived coarse country or region, crash traces, and diagnostics. Events must not include file names, paths, content, peers, codes, tokens, IP addresses, or encryption material.</li>
         <li><strong>Firebase App Check with Google Play Integrity</strong> processes app and device-integrity signals to issue short-lived attestation tokens. The Just Share API rejects mobile requests without a valid token for the registered Android app. File names, file contents, connection codes, and encryption material are not included in the attestation request.</li>
@@ -76,7 +76,8 @@
       <p>You must be at least 13, be legally able to agree, and have the right to send and receive every file you transfer.</p>
       <ul>
         <li>Do not use Just Share to infringe rights, distribute unlawful or harmful material, evade access controls, attack devices or networks, or violate law.</li>
-        <li>Local transfer remains free. Any Remote allowance, one-time Pro unlock, data pack, localized price, tax, refund eligibility, and purchase terms are shown by Google Play before purchase.</li>
+        <li>Local transfer remains free. Any Remote allowance, one-time Pro unlock, data pack, optional tip, localized price, tax, refund eligibility, and purchase terms are shown by Google Play before purchase.</li>
+        <li>The optional repeatable student-developer tip grants no entitlement, quota, or feature.</li>
         <li>Remote quota is reserved from the sender using the selected file size. If Android cannot determine the size, the maximum session amount may be reserved. Failed or interrupted sessions may still consume reserved quota.</li>
         <li>Transfer speed and availability depend on devices, permissions, networks, system restrictions, and third-party infrastructure. No system can guarantee delivery or absolute security.</li>
         <li>The app is provided subject to consumer rights that cannot legally be excluded. Back up important files and verify the recipient before sending.</li>
